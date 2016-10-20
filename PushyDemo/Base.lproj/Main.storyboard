@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1ah-pg-Vkd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pushy-->
+        <scene sceneID="067-mP-5DJ">
+            <objects>
+                <viewController id="TBb-kH-PGf" customClass="ViewController" customModule="PushyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dam-mM-PBa"/>
+                        <viewControllerLayoutGuide type="bottom" id="uNf-Fe-hBF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IT0-Ge-ZAF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="vXm-yD-SGY">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Abc-tv-MzI"/>
+                                    <constraint firstAttribute="width" constant="110" id="Kcm-Th-YS1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="registrationId" text="Registering your device..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEl-0u-oSC">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(please wait)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcD-B5-OTG">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94949919871794874" green="0.94949919871794874" blue="0.94949919871794874" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FEl-0u-oSC" firstAttribute="top" secondItem="vXm-yD-SGY" secondAttribute="bottom" constant="33" id="ErQ-BH-XMe"/>
+                            <constraint firstItem="FEl-0u-oSC" firstAttribute="centerX" secondItem="IT0-Ge-ZAF" secondAttribute="centerX" id="FtE-dq-whP"/>
+                            <constraint firstItem="lcD-B5-OTG" firstAttribute="centerX" secondItem="IT0-Ge-ZAF" secondAttribute="centerX" id="MS8-GA-j2S"/>
+                            <constraint firstItem="vXm-yD-SGY" firstAttribute="centerX" secondItem="IT0-Ge-ZAF" secondAttribute="centerX" id="Trs-AZ-4SZ"/>
+                            <constraint firstItem="vXm-yD-SGY" firstAttribute="centerY" secondItem="IT0-Ge-ZAF" secondAttribute="centerY" constant="-28" id="U7s-FV-C5q"/>
+                            <constraint firstItem="lcD-B5-OTG" firstAttribute="top" secondItem="FEl-0u-oSC" secondAttribute="bottom" constant="12" id="hvw-Sh-egs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pushy" id="Ut4-39-muH"/>
+                    <connections>
+                        <outlet property="instructions" destination="lcD-B5-OTG" id="awi-gT-76W"/>
+                        <outlet property="registrationId" destination="FEl-0u-oSC" id="Ftu-Ia-Rdi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Iq-AS-Q4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.25" y="120.4225352112676"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8rp-7p-bqb">
+            <objects>
+                <navigationController id="1ah-pg-Vkd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="eT2-2t-8BF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TBb-kH-PGf" kind="relationship" relationship="rootViewController" id="lrp-IT-jdo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Uc-3G-riP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="72" height="72"/>
+    </resources>
+</document>
