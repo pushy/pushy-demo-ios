@@ -4,7 +4,7 @@ A demo of the [Pushy iOS SDK](https://pushy.me/docs/ios/get-sdk) integrated into
 
 > [Pushy](https://pushy.me/) is the most reliable push notification gateway, perfect for real-time, mission-critical applications.
 
-This app registers your device to receive push notifications and assigns it a unique registration ID, which you can copy and paste into the [demo page](https://pushy.me/docs/resources/demo) to send yourself a test push notification.
+This app registers your device to receive push notifications and assigns it a unique token, which you can copy and paste into the [demo page](https://pushy.me/docs/resources/demo) to send yourself a test push notification.
 
 ## Screenshots
 
@@ -16,7 +16,7 @@ This app registers your device to receive push notifications and assigns it a un
 * Run `pod install` (ensure [CocoaPods](https://cocoapods.org/) is installed)
 * Open `PushyDemo.xcworkspace` using Xcode 8 or newer
 * Build and run the demo application on a physical iOS device
-* Copy the registration ID from the Xcode console and paste it into the [demo page](https://pushy.me/docs/resources/demo) to send yourself a test notification
+* Copy the device token from the Xcode console and paste it into the [demo page](https://pushy.me/docs/resources/demo) to send yourself a test notification
 
 ## More Information
 
