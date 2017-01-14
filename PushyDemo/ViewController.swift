@@ -11,15 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     // MARK: Properties
     @IBOutlet weak var instructions: UILabel!
-    @IBOutlet weak var registrationId: UILabel!
+    @IBOutlet weak var deviceToken: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Check for persisted registration ID
-        if let registrationId = UserDefaults.standard.string(forKey: "pushyToken") {
-            // Update UI to display registration ID
-            onRegistrationSuccess(registrationId)
+        // Check for persisted device token
+        if let deviceToken = UserDefaults.standard.string(forKey: "pushyToken") {
+            // Update UI to display device token
+            onRegistrationSuccess(deviceToken)
         }
         
         // Listen for registration result notification
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             print("Registration failed: \(error)")
             
             // Update UI to reflect failure
-            self.registrationId.text = "Registration failed"
+            self.deviceToken.text = "Registration failed"
             self.instructions.text = "(restart app to try again)"
             
             // Create an alert dialog with the error message
@@ -51,23 +51,23 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         // Registration success?
-        else if let registrationId = registrationResult["registrationId"] as? String {
-            // Update UI to display registration ID
-            onRegistrationSuccess(registrationId)
+        else if let deviceToken = registrationResult["deviceToken"] as? String {
+            // Update UI to display device token
+            onRegistrationSuccess(deviceToken)
         }
     }
     
-    func onRegistrationSuccess(_ registrationId: String) {
-        // Already printed this registration ID?
-        if (self.registrationId.text! == registrationId){
+    func onRegistrationSuccess(_ deviceToken: String) {
+        // Already displaying this device token?
+        if (self.deviceToken.text! == deviceToken){
             return
         }
         
-        // Print registration ID to console
-        print("Pushy registration ID: \(registrationId)")
+        // Print device token to console
+        print("Pushy device token: \(deviceToken)")
         
-        // Update UI to display registration ID
-        self.registrationId.text = registrationId
+        // Update UI to display device token
+        self.deviceToken.text = deviceToken
         self.instructions.text = "(copy from console)"
     }
 }

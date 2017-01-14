@@ -24,7 +24,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="vXm-yD-SGY">
                                 <rect key="frame" x="144.5" y="262.5" width="86" height="86"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="registrationId" text="Registering your device..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEl-0u-oSC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="deviceToken" text="Registering your device..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEl-0u-oSC">
                                 <rect key="frame" x="71" y="353.5" width="233" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" title="Pushy" id="Ut4-39-muH"/>
                     <connections>
                         <outlet property="instructions" destination="lcD-B5-OTG" id="awi-gT-76W"/>
-                        <outlet property="registrationId" destination="FEl-0u-oSC" id="Ftu-Ia-Rdi"/>
+                        <outlet property="deviceToken" destination="FEl-0u-oSC" id="Ftu-Ia-Rdi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Iq-AS-Q4f" userLabel="First Responder" sceneMemberID="firstResponder"/>

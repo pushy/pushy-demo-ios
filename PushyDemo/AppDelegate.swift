@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let pushy = Pushy(self, application: application)
         
         // Register the device for push notifications
-        pushy.register({ (error, registrationId) in
+        pushy.register({ (error, deviceToken) in
             // Prepare data to pass to ViewController
             var registrationResult: [AnyHashable: Any] = [:]
             
@@ -28,11 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 registrationResult["error"] = error
             }
             else {
-                // Pass registration ID
-                registrationResult["registrationId"] = registrationId
+                // Pass device token to UI
+                registrationResult["deviceToken"] = deviceToken
                 
-                // Persist the registration ID locally
-                UserDefaults.standard.set(registrationId, forKey: "pushyToken")
+                // Persist the device token locally
+                UserDefaults.standard.set(deviceToken, forKey: "pushyToken")
             }
             
             // Run on main thread
