@@ -1,12 +1,12 @@
 PODS:
-  - Pushy (1.0.4)
+  - Pushy (1.0.5)
 
 DEPENDENCIES:
-  - Pushy (= 1.0.4)
+  - Pushy (= 1.0.5)
 
 SPEC CHECKSUMS:
-  Pushy: dc56991db2814672f0a18f087fa044527e5d6012
+  Pushy: bb1910e5d1dc3ff749f1bbb91beb6d6811c43b39
 
-PODFILE CHECKSUM: b56b756cac7173fc73e78fd4a1f9d158f94d3996
+PODFILE CHECKSUM: b7d726a2fe176fef63ee2e73b13d6d63db5608fc
 
 COCOAPODS: 1.1.0.rc.3

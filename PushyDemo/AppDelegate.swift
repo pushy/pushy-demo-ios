@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Initialize Pushy SDK
-        let pushy = Pushy(self, application: application)
+        let pushy = Pushy(UIApplication.shared)
         
         // Register the device for push notifications
         pushy.register({ (error, deviceToken) in
