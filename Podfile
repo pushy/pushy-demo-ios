@@ -6,5 +6,5 @@ target 'PushyDemo' do
   use_frameworks!
 
   # Pods for PushyDemo
-  pod 'Pushy', '1.0.6'
+  pod 'Pushy', '1.0.7'
 end

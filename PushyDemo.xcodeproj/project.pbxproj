@@ -120,7 +120,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Pushy;
 				TargetAttributes = {
 					E4B6B44D1DB8201400FA0A7D = {
@@ -128,6 +128,9 @@
 						DevelopmentTeam = WTAKZM2J8Y;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -345,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3F1767997A1705A4C9D6744 /* Pods-PushyDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PushyDemo/PushyDemo.entitlements;
 				DEVELOPMENT_TEAM = WTAKZM2J8Y;
@@ -361,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 579C56082116158AA038783A /* Pods-PushyDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PushyDemo/PushyDemo.entitlements;
 				DEVELOPMENT_TEAM = WTAKZM2J8Y;

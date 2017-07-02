@@ -8,7 +8,7 @@
 
 import UIKit
 import AudioToolbox
-import PushySDK
+import Pushy
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
