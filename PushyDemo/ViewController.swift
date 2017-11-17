@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(onRegistrationResult), name: Notification.Name("registrationResult"), object: nil)
     }
     
-    func onRegistrationResult(notification: Notification) {
+    @objc func onRegistrationResult(notification: Notification) {
         // Get registration result dictionary from notification
         guard let registrationResult = notification.userInfo else {
             return
