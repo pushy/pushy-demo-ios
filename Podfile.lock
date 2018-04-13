@@ -1,12 +1,16 @@
 PODS:
-  - Pushy (1.0.11)
+  - Pushy (1.0.12)
 
 DEPENDENCIES:
-  - Pushy (= 1.0.11)
+  - Pushy (= 1.0.12)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Pushy
 
 SPEC CHECKSUMS:
-  Pushy: c1c433d72655f2e125309a63b6768417d4d5ffd1
+  Pushy: 831bf204b25e24e50c74548d3ac5a80236806842
 
-PODFILE CHECKSUM: 9fb519ea243b3466f397cb2003b67409bed0f93a
+PODFILE CHECKSUM: b6613d09328cc1283797ec016c574f061d91e519
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0
