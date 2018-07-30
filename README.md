@@ -12,6 +12,8 @@ This app registers your device to receive push notifications and assigns it a un
 
 ## Get Started
 
+**Note:** Please use Xcode 9.3 or newer to run the demo.
+
 * Clone the repository locally
 * Run `pod install` (ensure [CocoaPods](https://cocoapods.org/) is installed)
 * Open `PushyDemo.xcworkspace` using Xcode 8 or newer
