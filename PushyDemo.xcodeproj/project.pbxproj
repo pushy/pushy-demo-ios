@@ -176,7 +176,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PushyDemo/Pods-PushyDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PushyDemo/Pods-PushyDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Pushy/Pushy.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -185,7 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushyDemo/Pods-PushyDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushyDemo/Pods-PushyDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9BFD6811B3333A5DE91F668C /* [CP] Check Pods Manifest.lock */ = {
