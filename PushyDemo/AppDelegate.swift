@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Pushy SDK
         let pushy = Pushy(UIApplication.shared)
         
+        // Enable in-app notification banners (iOS 10+)
+        pushy.toggleInAppBanner(true)
+
         // Register the device for push notifications
         pushy.register({ (error, deviceToken) in
             // Prepare data to pass to ViewController
