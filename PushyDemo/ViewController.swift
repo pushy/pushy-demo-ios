@@ -42,10 +42,10 @@ class ViewController: UIViewController {
             self.instructions.text = "(restart app to try again)"
             
             // Create an alert dialog with the error message
-            let alert = UIAlertController(title: "Registration Error", message: "\(error)", preferredStyle: UIAlertControllerStyle.actionSheet)
+            let alert = UIAlertController(title: "Registration Error", message: "\(error)", preferredStyle: UIAlertController.Style.actionSheet)
             
             // Add an action button
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             
             // Show the alert dialog
             self.present(alert, animated: true, completion: nil)
