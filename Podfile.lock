@@ -5,7 +5,7 @@ DEPENDENCIES:
   - Pushy (= 1.0.31)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Pushy
 
 SPEC CHECKSUMS:
@@ -13,4 +13,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 0bebd492b691df3018e704080d422c94c1cf9351
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.1
