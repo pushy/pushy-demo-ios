@@ -4,11 +4,11 @@ PODS:
   - CocoaMQTT/Core (2.1.0):
     - MqttCocoaAsyncSocket (~> 1.0.8)
   - MqttCocoaAsyncSocket (1.0.8)
-  - Pushy (1.0.41):
+  - Pushy (1.0.54):
     - CocoaMQTT (= 2.1.0)
 
 DEPENDENCIES:
-  - Pushy (= 1.0.41)
+  - Pushy (= 1.0.54)
 
 SPEC REPOS:
   trunk:
@@ -19,8 +19,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   CocoaMQTT: 43666585403f664bb55361189c03c54897060324
   MqttCocoaAsyncSocket: 77d3b74f76228dd5a05d1f9526eab101d415b30c
-  Pushy: 12a46d18cabcde8c8d453a5b4670b263583d4883
+  Pushy: 21f159ce2693fe8fa518047bdf73ca14f02267a4
 
-PODFILE CHECKSUM: 2f0815b41c91f97d7f012977ba1822061a6d3a9c
+PODFILE CHECKSUM: fdf9fc46bcb99ef7d71e8765d92111baf80c14bb
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.16.2
